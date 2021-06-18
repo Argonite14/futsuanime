@@ -25,6 +25,21 @@ li a {
 li a:hover {
   background-color: #111;
 }
+.search {
+  position: absolute;
+  padding: 200px;
+  left: 360;
+}
+input[type=text], select {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  width: 100%;
+  padding: 16px 22px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 
 
 </style>
@@ -38,11 +53,12 @@ li a:hover {
   <li><a style="font-family:verdana;">RANDOM</a></li>
   <li style="float:right"><a style="font-family:verdana;">LOGIN</a></li>
 </ul>
-
+<div class="search">
 <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search" align="center">
-      <button type="submit" align="center">Submit</button>
+      <input type="text" placeholder="Search.." name="search" align="center" size="30">
+
 </form>
+</div>
 
 </body>
 </html>
